@@ -1,0 +1,118 @@
+#destination {
+  min-height: 100vh;
+  background-image: url('../assets/destination/background-destination-desktop.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0 2rem;
+  display: grid;
+  grid-template-columns: 7rem 1fr 1fr 7rem;
+  grid-template-rows: 5rem 1fr;
+}
+#destination span {
+  color: #ffffff60;
+}
+#destination h5 {
+  grid-column: 2/4;
+}
+.des-first {
+  grid-column: 2/3;
+  padding: 3rem 3rem;
+  width: 100%;
+}
+.des-first img {
+  width: 100%;
+}
+.des-second {
+  grid-column: 3/4;
+  padding-left: 3rem;
+}
+.des-menu ul {
+  justify-content: flex-start;
+}
+.des-menu ul li {
+  cursor: pointer;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  margin: 0 2rem 0 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  border-bottom: 3px solid transparent;
+}
+.des-menu li:hover,
+.des-menu li.activeDes {
+  border-bottom: 3px solid #fff;
+}
+.des-second h2 {
+  margin: 2.5rem 0;
+}
+.des-second > p {
+  font-size: 1.4rem;
+  width: 90%;
+  margin: 0rem 0 3.5rem;
+}
+.des-second .line {
+  width: 90%;
+}
+.des-second article {
+  margin-top: 1.8rem;
+}
+.des-second p.sub-1 {
+  margin-top: 0.8rem;
+}
+.des-second article div:first-child {
+  margin-right: 3rem;
+}
+
+/* media queries */
+@media screen and (max-width: 1100px) {
+  .des-first {
+    padding: 3rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #destination {
+    background-image: url('../assets/destination/background-destination-tablet.jpg');
+    grid-template-columns: 2rem 1fr 2rem;
+  }
+  .des-first {
+    grid-column: 2/3;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .des-second {
+    grid-column: 2/3;
+    text-align: center;
+    padding: 0;
+    margin-top: 3rem;
+  }
+  .des-second > p {
+    margin: 0 auto 3.5rem;
+    width: 80%;
+  }
+  .des-menu ul {
+    justify-content: center;
+  }
+  .des-second .line {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .des-second article {
+    justify-content: space-around;
+  }
+  .des-second article div:first-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  #destination {
+    background-image: url('../assets/destination/background-destination-mobile.jpg');
+  }
+  .des-second article {
+    display: block;
+  }
+  .des-second article div:first-child {
+    margin-bottom: 2rem;
+  }
+}

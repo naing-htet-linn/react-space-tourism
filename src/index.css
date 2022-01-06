@@ -1,13 +1,112 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Nanum+Myeongjo:wght@400;700&display=swap');
+
+:root {
+  --dark: #0b0d17;
+  --blue: #d0d6f9;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+#root {
+  position: relative;
+}
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  font-family: sans-serif;
+  background-color: var(--dark);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  line-height: 1.25;
+  font-family: 'Nanum Myeongjo', serif;
+}
+h1 {
+  font-size: 9.375rem;
+}
+h2 {
+  font-size: 6.25rem;
+}
+h3 {
+  font-size: 3.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  letter-spacing: 4.5px;
+  font-weight: 400;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+p {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+p.sub-1 {
+  text-transform: uppercase;
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1.75rem;
+}
+p.sub-2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 2.35px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* utilities classes */
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.ai-center {
+  align-items: center;
+}
+.jc-center {
+  justify-content: center;
+}
+
+.text-dark {
+  color: var(--dark);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-white {
+  color: #fff;
+}
+/* ================= */
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
 }
